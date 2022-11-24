@@ -1,6 +1,14 @@
 # drishti-restraunt-client
 
-This template should help get you started developing with Vue 3 in Vite.
+Hello internet people !.
+This is my project for drishti-restraunt-client.
+I use vue as my framework and vite for development.
+I added bulma css framework to create my landing page and navigation.
+I used vue router to route different pages/views of the app.
+Installed firebase and created a dummy database in firestore.
+I Testing working of reading and adding document.
+Since, the requirement is to for complex pagination and filters and searchddd, I am going to use antdv as my ui library of choice.
+ld help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
