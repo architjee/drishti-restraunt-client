@@ -2,6 +2,7 @@
   <div v-if="loading">Loading</div>
   Hi! Welcome to the 
   Summary Dashboard
+  <a-table :dataSource="dishData" :columns="columns"/>
 </template>
 
 <style>
@@ -16,6 +17,24 @@ export default {
     return {
       loading: false,
       db: getFirestore(firebaseapp),
+      dishData : [],
+      columns: [
+          {
+            title: 'Dish Name',
+            dataIndex: 'dish',
+        
+          },
+          {
+            title: 'Duration',
+            dataIndex: 'duration',
+          
+          },
+          {
+            title: 'startTime',
+            dataIndex: 'startTime',
+          
+          },
+        ],
     };
   },
   methods: {
@@ -25,9 +44,11 @@ export default {
       const querySnapshot = await getDocs(collection(this.db, "data-collection"));
       console.log("We got the following querySnapshot", querySnapshot);
       querySnapshot.forEach((doc) => {
+        dishData.push(doc.data())
         console.log(`${doc.id} => ${doc.data()}`);
       });
-
+      console.log(dishData)
+      this.dishData = dishData
       this.loading = false;
     },
     async addDoc() {
