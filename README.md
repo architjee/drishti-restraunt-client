@@ -1,5 +1,6 @@
 # drishti-restraunt-client
 
+## Running comments :
 Hello internet people !.
 This is my project for drishti-restraunt-client.
 I use vue as my framework and vite for development.
@@ -9,6 +10,13 @@ Installed firebase and created a dummy database in firestore.
 I Testing working of reading and adding document.
 Since, the requirement is to for complex pagination and filters and searchddd, I am going to use antdv as my ui library of choice.
 ld help get you started developing with Vue 3 in Vite.
+
+## Specific requirements points:
+Filters for:
+    actions,
+    stations,
+    dishes,
+Result paginated
 
 ## Recommended IDE Setup
 

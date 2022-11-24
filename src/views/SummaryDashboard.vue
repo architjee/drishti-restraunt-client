@@ -25,6 +25,10 @@ export default {
         
           },
           {
+            title: 'Station',
+            dataIndex: 'station',
+          },
+          {
             title: 'Duration',
             dataIndex: 'duration',
           
@@ -34,6 +38,10 @@ export default {
             dataIndex: 'startTime',
           
           },
+          {
+            title: 'Action Taken',
+            dataIndex: 'action',
+          }
         ],
     };
   },
