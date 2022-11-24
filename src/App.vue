@@ -23,7 +23,7 @@ export default {
 
 <template>
 
-  <section class="hero is-success is-fullheight">
+  <section class="hero is-fullheight">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
       <header class="navbar">
