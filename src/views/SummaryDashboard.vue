@@ -124,6 +124,7 @@ export default {
   },
   methods: {
      handleSearch(selectedKeys, confirm, dataIndex) {
+      // We need to handle our sorting somehow
       confirm();
       this.state.searchText = selectedKeys[0];
       this.state.searchedColumn = dataIndex;
