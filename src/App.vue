@@ -10,9 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <header class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-          </a>
+          <router-link to="/" class="navbar-item ">Swanky Restraunt</router-link>
           <span class="navbar-burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
