@@ -1,4 +1,5 @@
 # drishti-restraunt-client
+Please run npm install to install the dependencies.
 Use `npm run dev` to run in dev mode.
 Or serve index.html from /dist folder to open the productin build.
 
