@@ -1,4 +1,6 @@
 # drishti-restraunt-client
+Use `npm run dev` to run in dev mode.
+Or serve index.html from /dist folder to open the productin build.
 
 ## Running comments :
 Hello internet people !.
@@ -11,12 +13,16 @@ I Testing working of reading and adding document.
 Since, the requirement is to for complex pagination and filters and searchddd, I am going to use antdv as my ui library of choice.
 ld help get you started developing with Vue 3 in Vite.
 
+Finally added d3.js for pie charts as a dependency.
+
 ## Specific requirements points:
 Filters for:
     actions,
     stations,
     dishes,
 Result paginated
+## TODO
+Still have to create aggreate and pie charts.
 
 ## Recommended IDE Setup
 
