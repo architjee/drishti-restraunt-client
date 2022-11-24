@@ -41,7 +41,23 @@
     </template>
     
   </a-table>
-
+  <nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <!-- Charts are supposed to go here -->
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <!-- Charts are supposed to go here -->
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <!-- Charts are supposed to go here -->
+    </div>
+  </div>
+</nav>
 </template>
 
 <style>
@@ -49,6 +65,7 @@
 </style>
 
 <script>
+import def from './PieChart'
 import firebaseapp from '../firebaseconfig';
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 import { SearchOutlined } from '@ant-design/icons-vue'
