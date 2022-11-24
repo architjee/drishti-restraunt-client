@@ -1,6 +1,6 @@
 <script>
 import firebaseapp from './firebaseconfig';
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 
 
 import { RouterLink, RouterView } from 'vue-router'
@@ -18,10 +18,23 @@ export default {
       querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
       });
+    },
+    async addDoc() {
+      try {
+        const docRef = await addDoc(collection(this.db, "data-collection"), {
+          dish: "Ada",
+          startTime: "24 Nov 8:21AM",
+          duration: 10
+        });
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
     }
   },
   mounted() {
-    
+
+    this.addDoc()
     this.readData()
   },
 
